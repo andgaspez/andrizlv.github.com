@@ -17,7 +17,9 @@ h2{
   padding: 0;
   margin-top: 3px;;
 }
-
+p{
+  text-align: center;
+}
 .symbols{
   font-size: 60px;
   padding: 0;
@@ -41,7 +43,7 @@ h2{
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 300Spx 300px;
   grid-gap: 10px;
-  background-color: #2196F3;
+
   padding: 10px;
 
 }
