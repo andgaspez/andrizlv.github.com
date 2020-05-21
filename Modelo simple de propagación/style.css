@@ -7,18 +7,19 @@ header{
 }
 
 h1{
-  font-size: 60px;
+  font-size: 50px;
   margin: 0;
   padding: 0;
 
 }
 h2{
   text-align: center;
+  margin: 0 auto;
   padding: 0;
-  margin-top: 3px;;
+  font-size: 32px;
 }
 p{
-  text-align: center;
+
 }
 .symbols{
   font-size: 60px;
@@ -27,7 +28,7 @@ p{
   align-items: center;
 }
 .nombresEst{
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 1px;
   padding: 0px 0px 20px 0px;
   margin: 0;
@@ -43,14 +44,26 @@ p{
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 300Spx 300px;
   grid-gap: 10px;
-
   padding: 10px;
-
 }
 
+.item1{
+  text-align: justify;
+}
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: justify;
 
   font-size: 30px;
+}
+body{
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
