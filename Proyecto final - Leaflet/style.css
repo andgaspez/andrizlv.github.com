@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+}
+header{
+  text-align: center;
+}
+
+h1{
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+
+}
+h2{
+  text-align: center;
+  padding: 0;
+  margin-top: 3px;;
+}
+
+.symbols{
+  font-size: 60px;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+}
+.nombresEst{
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 0px 0px 20px 0px;
+  margin: 0;
+}
+.nombreProf{
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 0 0 0 10px;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 300Spx 300px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: justify;
+
+  font-size: 30px;
+}
