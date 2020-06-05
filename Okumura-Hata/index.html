@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Proyecto final para el curso Sist. de Comunicaciones - Prof. Leandro Villa, Universidad del Valle -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sis. Comunicaciones: modelo Okumura-Hata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  </head>
+
+  <body>
+<header>
+  <h1>Escuela de Ingeniería Eléctrica y Electrónica, </br>
+    Universidad del Valle</h1></br></br>
+    <img src="logo1min.png" alt="">
+  <h2>Pérdidas de potencia entre antenas. Modelo Okumura-Hata</h2>
+
+  <p class="nombresEst">Wilson Paniquita & Andriz Vegas</p>
+
+  <h2>Sistemas de Comunicaciones</h1>
+  <p class="nombreProf">Prof. Leandro Villa Barona</p>
+</header>
+
+<div class="grid-container">
+  <div class="item1">
+    <p><b>E</b>l modelo de pérdidas Okumura-Hata permite estimar las pérdidas
+      de propagación en función de su tamaño y tipo de área —urbana, semiurbana
+      y abierta o rural—. Por lo tanto, la ciudad de Cali podría clasificarse como
+      una ciudad pequeña urbana
+      y en consecuencia para este modelo se establece los siguientes parámetros:
+      <dl>
+        <dt>Factor de corrección relativo a una ciudad pequeña urbana: <dd></br>
+          \(  a(h_2)=(1,1log_{10}{f}-0,7)h_2-1,56log_{10}{f}+0,8  \)
+        </dt>
+      </dl>
+      <dl>Y por tanto se pueda establecer la estimación en las pérdidas de propagación como sigue: </br>
+      </br> \(        L=69,55+26,16log_{10}{f}-13,82log_{10}{h_1}-a(h_2)+(44,9-6,55log_{10}{h_1})log_{10}{d}           \)
+      </br></br>Teniendo en cuenta que:
+    </dl>
+    <ul>
+      <li>\(f: (150MHz< f < 1500MHz) -\) Frecuencia de operación</li>
+      <li>\(h_1: (30m< h_1 < 200m) - \) Altura de la antena transmisora.</li>
+      <li>\(h_2: (1m< h_2 < 10m) - \) Altura de la antena receptora.</li>
+      <li>\(d: (1km< d <20km) - \) Distancia entre antenas.</li>
+      <li>Nota: si alguno de estos parámetros no se encuentra en los rangos de operación,
+      se generará una alerta de información.</li>
+    </ul>
+    </p>
+  </div>
+  <!--<div class="item2">
+
+    <p style="font-size: 40px;padding:0;margin:0;text-align: center;">\(L_{dB}= 10log{P_{in} \over P_{out}}\)</p>
+    <p style="font-size: 40px;text-align:center;">\(P_{out}=1W\)</p>
+  </div>-->
+
+</div>
+
+
+
+      <div id="myMap" style="height: 600px;width: 100%;"></div>
+
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+     crossorigin=""></script>
+     <script src="map.js"> </script>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  </body>
+</html>
